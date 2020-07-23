@@ -1,0 +1,21 @@
+.p-grid__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.p-grid__list-item {
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .p-grid__list-item {
+        width: 33.3333%;
+    }
+}

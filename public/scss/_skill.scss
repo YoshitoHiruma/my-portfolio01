@@ -1,0 +1,66 @@
+.skill-wrap {
+  min-height: 50vh;
+
+}
+
+.p-grid__table {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  li {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+
+    .head {
+      width: 100%;
+      margin-bottom: 5px;
+      background: #41b6e6;
+      border: 2px solid #fff;
+      color: #fff;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    .data {
+      width: 100%;
+      line-height: 2;
+      background: #a2dbf3;
+      border: 2px solid #fff;
+      text-align: center;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skill-wrap {
+    min-height: 0em;
+
+  }
+
+  .p-grid__table {
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      width: 31%;
+      list-style: none;
+
+      .data {
+        &:not(:last-of-type) {
+          margin-bottom: 2rem;
+        }
+
+        font-size: 1.2rem;
+      }
+    }
+  }
+}

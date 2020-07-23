@@ -1,0 +1,574 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+body p {
+  font-size: 1.2rem;
+}
+
+.module-spacer--small {
+  height: 1rem;
+}
+
+.module-spacer--medium {
+  height: 2rem;
+}
+
+.module-spacer--large {
+  height: 3rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #e6c044;
+}
+
+@media screen and (min-width: 768px) {
+  body h2 {
+    font-size: 2rem;
+  }
+  body p {
+    font-size: 1.2rem;
+  }
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: 250px;
+}
+
+/* 全スライド共通スタイル */
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 250px;
+}
+
+.swiper-slide a {
+  color: #111010;
+}
+
+/* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
+.swiper-slide:nth-child(4n+1) {
+  background-color: #cbdd2a;
+}
+
+/* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
+.swiper-slide:nth-child(4n+2) {
+  background-color: #cf5da0;
+}
+
+/* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
+.swiper-slide:nth-child(4n+3) {
+  background-color: #13bd54;
+}
+
+/* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
+.swiper-slide:nth-child(4n+4) {
+  background-color: #BEDAE5;
+}
+
+.p-grid__view-first {
+  background-image: url(../images/alpine-1208308_1920.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%, 100%;
+}
+
+.p-grid__view-first div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  /* 画面中央に位置を設定 */
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.p-grid__view-first .p-grid__view-first div h2 {
+  color: white;
+  color: black;
+  font-size: 3.052rem;
+  margin-bottom: 1rem;
+}
+
+.p-grid__view-first .p-grid__view-first div p {
+  color: white;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.p-grid__view-first .p-grid__view-first div a {
+  margin-top: 3rem;
+}
+
+/*ボタン*/
+.p-btn-round {
+  background: rgba(8, 137, 243, 0.25);
+  border: 1px solid white;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  color: white;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: 3rem;
+  margin: 0 auto 0.25rem auto;
+  line-height: 3rem;
+  text-align: center;
+  transition: all 0.5s;
+  width: 16rem;
+}
+
+.p-btn-round:hover {
+  box-shadow: 0 8px 8px rgba(8, 137, 243, 0.25);
+  background-color: white;
+  color: blue;
+  top: -2px;
+}
+
+.p-btn-round:active {
+  top: 2px;
+}
+
+.p-btn-round:hover:visited {
+  color: rgba(8, 137, 243, 0.25);
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-info .icon-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.profile-info .profile-list {
+  display: inline-block;
+  text-align: left;
+}
+
+.profile-info .profile-list ul {
+  margin: 0;
+}
+
+.profile-text {
+  text-align: center;
+}
+
+.profile-text p {
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile-info .icon-img {
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+  }
+  .profile-info .module-spacer--small {
+    display: none;
+  }
+  .profile-info .profile-list ul {
+    margin-left: 3rem;
+    list-style: none;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile-text p {
+    max-width: 50%;
+    display: inline-block;
+    text-align: left;
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+}
+
+.skill-wrap {
+  min-height: 50vh;
+}
+
+.p-grid__table {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.p-grid__table li {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.p-grid__table li .head {
+  width: 100%;
+  margin-bottom: 5px;
+  background: #41b6e6;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.p-grid__table li .data {
+  width: 100%;
+  line-height: 2;
+  background: #a2dbf3;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+.p-grid__table li:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .skill-wrap {
+    min-height: 0em;
+  }
+  .p-grid__table {
+    flex-direction: row;
+    width: 95%;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .p-grid__table li {
+    width: 31%;
+    list-style: none;
+  }
+  .p-grid__table li .data {
+    font-size: 1.2rem;
+  }
+  .p-grid__table li .data:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+}
+
+.work {
+  text-align: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.work:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+
+.work p {
+  margin: 0;
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .works {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+  .works .work {
+    margin: 0;
+    width: calc(100% / 3);
+  }
+}
+
+.p-grid__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.p-grid__list-item {
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .p-grid__list-item {
+    width: 33.3333%;
+  }
+}
+
+.contact-wrap h2 {
+  margin-bottom: 1rem;
+}
+
+.contact-wrap .sns-icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-wrap .sns-icon span:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-wrap {
+    min-height: 0rem;
+    box-sizing: border-box;
+  }
+}
+
+.bottom-sticky-nav {
+  height: 50px;
+  position: fixed;
+  display: block;
+  background: #ffffff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.bottom-sticky-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom-sticky-nav ul li {
+  flex: 1;
+}
+
+.bottom-sticky-nav ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+  color: #00587a;
+}
+
+.bottom-sticky-nav ul li a:hover,
+.bottom-sticky-nav ul li a:focus {
+  text-decoration: none;
+}
+
+.bottom-sticky-nav ul li a i {
+  font-size: 18px;
+}
+
+.bottom-sticky-nav ul li a span {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+footer {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=main.css.map */

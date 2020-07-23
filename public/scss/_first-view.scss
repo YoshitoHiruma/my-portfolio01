@@ -1,0 +1,73 @@
+.p-grid__view-first {
+  background-image: url(../images/alpine-1208308_1920.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: 50%, 100%;
+
+  div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    /* 画面中央に位置を設定 */
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+
+  }
+
+  .p-grid__view-first div h2 {
+    color: white;
+    color: black;
+    font-size: 3.052rem;
+    margin-bottom: 1rem;
+  }
+
+  .p-grid__view-first div p {
+    color: white;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  .p-grid__view-first div a {
+    margin-top: 3rem;
+  }
+
+
+
+}
+
+/*ボタン*/
+.p-btn-round {
+  background: rgba(8, 137, 243, 0.25);
+  border: 1px solid white;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  color: white;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 400;
+  height: 3rem;
+  margin: 0 auto 0.25rem auto;
+  line-height: 3rem;
+  text-align: center;
+  transition: all 0.5s;
+  width: 16rem;
+
+  &:hover {
+    box-shadow: 0 8px 8px rgba(8, 137, 243, 0.25);
+    background-color: white;
+    color: blue;
+    top: -2px;
+  }
+
+  &:active {
+    top: 2px;
+  }
+
+  &:hover:visited {
+    color: rgba(8, 137, 243, 0.25);
+  }
+}

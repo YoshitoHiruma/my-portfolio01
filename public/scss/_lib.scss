@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+////////////////////////////////////
+/////////空白をつくるSection/////////
+////////////////////////////////////
+.module-spacer--small {
+  height: 1rem;
+}
+
+.module-spacer--medium {
+  height: 2rem;
+}
+
+.module-spacer--large {
+  height: 3rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(230, 192, 68);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    h2 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
